@@ -16,6 +16,7 @@ import { ErrorComponent } from './error/error.component';
 import { StudentsComponent } from './students/students.component';
 import { StudentdetailComponent } from './studentdetail/studentdetail.component';
 import { BlogicComponent } from './blogic/blogic.component';
+import { HelloComponent } from './hello/hello.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import { BlogicComponent } from './blogic/blogic.component';
     ErrorComponent,
     StudentsComponent,
     StudentdetailComponent,
-    BlogicComponent
+    BlogicComponent,
+    HelloComponent
   ],
   imports: [
     BrowserModule,

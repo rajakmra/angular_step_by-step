@@ -39,12 +39,10 @@ export class BlogicComponent implements OnInit {
       {
         str = str.replace(str.charAt(i),'')
       }
-
-
     }
-
     this.myoutput = str;
-
+    console.log(str);
+    return str;
   }
 
 }

@@ -13,13 +13,18 @@ describe('BlogicComponent', () => {
     .compileComponents();
   }));
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(BlogicComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+  
+  it('should create', () => {
+    const fixture = TestBed.createComponent(BlogicComponent);
+    const component = fixture.componentInstance;
+    const el = fixture.nativeElement.querySelector('input');
+    //el.value ='hello';
+    //el.dispatchEvent(new Event('input'));
+    component.removeVowels(el.value);
+    //expect(component.myoutput).toBe('hll');
+    expect(component.myoutput).toEqual('hll');
+    //expect(component.removeVowels('Hello World')).toBe('Hll Wrld');
+    // console.log(component.removeVowels('Vinith Kumar'));
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
 });
